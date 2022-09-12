@@ -1,0 +1,2127 @@
+@font-face {
+    font-family: avenir;
+    src: url('/fonts/avenir_ff/AvenirLTStd-Book.otf');
+}
+@font-face {
+    font-family: trajin;
+    src: url('/fonts/Trajin/TrajanPro-Regular.woff');
+}
+@font-face {
+    font-family: trajin-bold;
+    src: url('/fonts/Trajin/TrajanPro-Bold.woff');
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+p{
+    font-family: avenir, sans-serif;
+    font-weight: 400px;
+    line-height: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: trajin , sans-serif;
+}
+h2 {
+    font-size: 32px;
+}
+
+header {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease-in;
+    z-index: 9;
+}
+.hamburger{
+    display: none;
+}
+.header-container {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    background: #624933;
+    padding: 30px 15px;
+    position: absolute;
+    left: 80px;
+    top: 0;
+}
+
+nav.navbar {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+nav.navbar>ul>li {
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+nav.navbar>ul>li>a {
+    color: white;
+    display: inline-block;
+}
+
+.header-icons li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.header-icons {
+    width: 13%;
+}
+
+
+.header-icons li {
+    display: inline-block;
+}
+
+.header-icons img {
+    display: inline-block;
+}
+
+.banner {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content-main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 42px;
+    max-width: 75%;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.banner-content p {
+    max-width: 80%;
+    color: white;
+}
+
+.banner-content a {
+    color: white;
+    padding: 10px 35px;
+    display: inline-block;
+    border: 1px solid #F2C6A4;
+    margin: 30px 10px 0px 0px;
+}
+
+.banner-content>a:nth-child(3) {
+    background: #F2C6A4;
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
+.banner-content a:nth-child(4){
+    transition: all 0.4s ease-in-out;
+}
+
+.container-main {
+    max-width: 81.25%;
+    margin: 0 auto;
+}
+
+.about-us-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0px;
+    flex-wrap: wrap;
+}
+
+.about-us-heading {
+    width: 30%;
+}
+
+.about-us-content {
+    width: 60%;
+}
+
+.about-us-heading h2 {
+    font-size: 62px;
+    max-width: 80%;
+    margin-left: 40px;
+    position: relative;
+    color: #624933;
+    font-weight: bold;
+    font-family: trajin-bold , sans-serif;
+}
+
+.about-us-heading h2::before {
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: #624933;
+    position: absolute;
+    left: -40px;
+}
+
+.flavours-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flavours-width1 {
+    width: 27%;
+    padding: 20px 25px;
+    text-align: center;
+    margin-top: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.flavours-width1 a {
+    color: #624933;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.index-shop-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 60px 0px;
+}
+
+.index-shop-element {
+    width: 48%;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.index-shop-tea {
+    width: 48%;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.index-shop-content {
+    color: white;
+    padding: 30px 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+a.shop-now-btn {
+    color: white;
+    padding: 10px 35px;
+    display: inline-block;
+    background: #F2C6A4;
+}
+
+.index-shop-content h2 {
+    margin: 20px 0px;
+    font-size: 24px;
+}
+.index-shop-hover{
+    overflow: hidden;
+    background-size: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.index-shop-hover:hover {
+    background-size: 120%;
+}
+
+.index-blog-carousel {
+    padding-right: 20px;
+}
+
+.index-blog-carousel p {
+    margin: 10px 0px;
+}
+
+.owl-nav button {
+    position: relative;
+}
+
+button.owl-prev {
+    position: absolute;
+    left: -45px;
+    top: 40%;
+}
+
+.owl-prev span {
+    font-size: 30px;
+}
+
+button.owl-next {
+    position: absolute;
+    right: -30px;
+    top: 40%;
+}
+
+.owl-next span {
+    font-size: 30px;
+}
+
+.index-blog-carousel a {
+    color: black;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.index-owl-background {
+    background: #F7F7F7;
+    padding: 80px 0px;
+}
+
+.owl-heading {
+    text-align: center;
+}
+
+.owl-heading h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #624933;
+    margin-bottom: 50px;
+}
+
+.newsletter-main {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0px;
+    position: relative;
+}
+
+.newsletter-main input[type="text"] {
+    height: 40px;
+    width: 85%;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #707070;
+    color: black;
+}
+
+.newsletter-main p {
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.newsletter-btn button {
+    padding: 15px;
+    background: #624933;
+    color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 60px;
+    outline: 0;
+    border: 0;
+}
+
+.footer-container {
+    max-width: 92%;
+    margin: 0 auto;
+}
+
+.footer-section1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.footer-logo {
+    width: 40%;
+}
+.footer-logo p {
+    opacity: 0.6;
+}
+
+.footer-social-icons a {
+    opacity: 0.6;
+}
+.footer-links {
+    width: 12%;
+}
+
+.footer-social-icons {
+    width: 20%;
+}
+
+.footer-logo img {
+    height: 98px;
+    width: 121px;
+    margin-bottom: 40px;
+}
+
+.footer-links h3 {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footer-links a {
+    color: black;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.footer-social-icons h3 {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footer-social-icons a {
+    color: black;
+}
+
+.footer-social-icons li {
+    display: inline-block;
+    padding: 0px 8px;
+}
+
+footer {
+    border-top: 1px solid rgba(112,112,112, 30%);
+}
+
+.footer-section2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.footer-copyright p {
+    display: inline-block;
+}
+.banner-content a:nth-child(3):hover{
+    background: transparent;
+    color: white;
+}
+.banner-content a:nth-child(4):hover{
+    background: #F2C6A4;
+    color: black;
+}
+.newsletter-main h2{
+    color: #624933;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: black;
+}
+
+.flavours-width1:hover {
+    transform: scale(1.2);
+}
+
+.index-blog-carousel a:hover {
+    background: #624933;
+    color: white;
+    padding: 10px 15px;
+}
+
+/*....................
+ For Second Home Page 
+ ....................*/
+ .hamburger1{
+    display: none;
+ }
+.header-container1{
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.header1 {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav.navbar {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+nav.navbar1>ul>li {
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+nav.navbar1>ul>li>a {
+    display: inline-block;
+    color: black;
+}
+
+
+nav.navbar1 {
+    width: 33.33%;
+    padding: 0px 30px;
+}
+
+.logo1 {
+    width: 33.33%;
+    text-align: center;
+}
+
+.logo1 img {
+    height: 47px;
+    width: 47px;
+}
+
+.header-icons1 {
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-icons1 li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.header-icons1 li {
+    display: inline-block;
+}
+
+.header-icons1 img {
+    display: inline-block;
+    filter: invert(1);
+}
+
+.banner1-main {
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-content1 {
+    color: black;
+}
+
+.banner-content-main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.banner-content1 {
+    max-width: 50%;
+}
+
+.banner-content1 h1 {
+    font-size: 42px;
+    max-width: 75%;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.banner-content1 p {
+    max-width: 80%;
+}
+
+.banner-content1 a {
+    padding: 10px 35px;
+    display: inline-block;
+    border: 1px solid #624933;
+    margin: 30px 10px 0px 0px;
+}
+
+.banner-content1>a:nth-child(3) {
+    background: #624933;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.banner-content1>a:nth-child(3):hover {
+    background: transparent;
+    color: black;
+}
+
+.banner-content1 a:nth-child(4) {
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
+
+.banner-content1 a:nth-child(4):hover {
+    background: #624933;
+    color: white;
+}
+
+.about-us1-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us1-content1 {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us1-content2 {
+    width: 50%;
+    color: white;
+}
+.about-us1-content2 h2 {
+    font-weight: 500;
+}
+
+.about-us1-content2 p {
+    margin: 20px 0px;
+}
+
+.about-us1-content2 a {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.about-us1-width1 {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-us1-width1 img {
+    height: 160px;
+    width: 198px;
+    z-index: 1;
+}
+
+.about-us1-width1::after {
+    content: '';
+    background: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.about-us1-para {
+    padding: 70px;
+    background: #624933;
+}
+
+.about-us1-content2 {
+    margin: 30px 0px;
+}
+
+section.about-us1 {
+    margin-top: -30px;
+}
+
+.our-coffee-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 81.45%;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.our-coffee-content {
+    text-align: center;
+}
+
+.our-coffee-content h2 {
+    font-size: 38px;
+}
+
+.our-coffee-content p {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.our-coffee-images {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.our-coffee-images-width1 {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+}
+
+.our-coffee-images-width1 a {
+    color: #624933;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.why-colibri-main {
+    max-width: 90%;
+    margin-right: auto;
+    display: flex;
+    padding: 60px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.why-colibri-width1 {
+    width: 50%;
+}
+
+.why-colibri-width2 {
+    width: 40%;
+}
+.why-colibri-width2 h2{
+    color: #624933;
+}
+
+.why-colibri-width2 p {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 20px 0px;
+}
+
+.why-colibri-width2 a {
+    color: white;
+    background: #624933;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.why-colibri-width1 img {
+    margin-left: -10px;
+}
+
+.home-video-main video {
+    width: 100%;
+    height: 540px;
+    display: flex;
+    object-fit: cover;
+}
+
+.home-video-main {
+    position: relative;
+}
+
+button.home-video-btn {
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    padding: 15px 30px;
+    display: inline-block;
+    background: transparent;
+    outline: unset;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+}
+
+.home-video-btn i {
+    margin-right: 10px;
+}
+.sub-main {
+height: 600px;
+display: flex;
+align-items: center;
+}
+
+.sub-content {
+max-width: 81.25%;
+color: white;
+margin: 0 auto;
+}
+
+.sub-content p {
+margin: 20px 0px;
+max-width: 40%;
+}
+
+.sub-content button {
+background: #624933;
+padding: 15px 20px;
+display: inline-block;
+color: white;
+outline: unset;
+border: unset;
+cursor: pointer;
+}
+
+.our-coffee-images-width1:nth-child(even)>img:hover {
+    transform: scale(1.2) rotate(45deg);
+}
+.our-coffee-images-width1:nth-child(odd)>img:hover{
+    transform: scale(1.2) rotate(-45deg);
+}
+
+.our-coffee-images-width1>img {
+    transition: all 0.4s;
+}
+.change-color{
+    background: black;
+}
+.change-color1 {
+    background: white;
+}
+
+/* For 1600 x 800 */
+@media (min-width:1600px){
+    p{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .logo {
+        left: 110px;
+    }
+    
+    nav.navbar {
+        width: 84%;
+    }
+    
+    .header-container {
+        justify-content: space-between;
+    }
+    
+    nav.navbar>ul>li {
+        padding: 20px 20px;
+    }
+    .banner{
+        height: 90vh;
+    }
+    .banner-content h1 {
+        font-size: 48px;
+    }
+    nav.navbar>ul>li>a {
+        font-size: 18px;
+    }
+    
+    .banner-content>a {
+        font-size: 16px;
+    }
+    .about-us-heading h2 {
+        font-size: 68px;
+        max-width: 70%;
+    }
+    .flavours-flex{
+        margin-top: 70px;
+    }
+    .index-shop-flex{
+        margin-top: 30px;
+    }
+    .index-shop-element{
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+    .index-shop-tea{
+        background-repeat: no-repeat;
+    }
+    .newsletter-main h2 {
+        font-size: 38px;
+    }
+    
+    .newsletter-main p {
+        max-width: 70%;
+        margin: 30px auto;
+    }
+    .footer-container{
+        max-width: 88%;
+    }
+    /*..............
+    For Home Page 2 
+    ...............*/
+    .banner-content1 h1 {
+        font-size: 48px;
+    }
+    .about-us1-content2.about-us1-para {
+        padding: 90px;
+    }
+    
+    .our-coffee-main {
+        padding: 90px 0px;
+    }
+    
+    .our-coffee-images {
+        margin-top: 40px;
+    }
+    
+    .sub-content p {
+        margin: 30px 0px;
+    }
+    .home-video-main video {
+        height: 770px;
+    }
+    
+    
+}
+
+
+/* For 1920 x 1080 px */
+@media (min-width:1601px){
+    p{
+        font-size: 18px;
+    }
+    .logo {
+        left: 140px;
+    }
+    .header-container{
+        justify-content: space-between;
+    }
+    .header-icons li {
+        padding: 0px 20px;
+    }
+    
+    nav.navbar {
+        width: 75%;
+        
+    }
+    nav.navbar>ul>li {
+        padding: 20px;
+    }
+    .banner-content h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    nav.navbar>ul>li>a {
+        font-size: 18px;
+    }
+    
+    .banner-content>a {
+        font-size: 16px;
+    }
+    .banner-content p {
+        max-width: 66%;
+    }
+    .banner-content a{
+        margin: 80px 10px 0px 0px;
+    }
+    .about-us-heading h2 {
+        font-size: 68px;
+        max-width: 70%;
+    }
+    .newsletter-main h2 {
+        font-size: 38px;
+    }
+    
+    .newsletter-main p {
+        max-width: 70%;
+        margin: 20px auto;
+    }
+    .footer-container{
+        max-width: 88%;
+    }
+    .about-us-content p {
+        max-width: 94%;
+    }
+    
+    .about-us-heading h2 {
+        max-width: 60%;
+        margin-left: 70px;
+    }
+    .about-us-heading h2::before {
+        left: -67px;
+    }
+    .about-us-main {
+        padding: 100px 0px;
+    }
+    .flavours-flex {
+        margin-top: 80px;
+    }
+    .index-shop-element{
+        height: 700px;
+    }
+    .index-shop-content{
+        padding: 40px;
+    }
+    .owl-heading h2 {
+        margin-bottom: 70px;
+    }
+    .newsletter-main p {
+        max-width: 90%;
+        font-size: 22px;
+    }
+    .newsletter-main input[type="text"] {
+        width: 85%;
+    }
+    
+    .newsletter-btn button {
+        right: 40px;
+        bottom: 100px;
+    }
+    .newsletter-main {
+        padding: 100px 0px;
+    }
+
+}
+
+
+/* For 1280  */
+@media (max-width: 1300px){
+    .banner {
+        height: 100vh;
+    }
+    
+    .header-icons {
+        width: 15%;
+    }
+    
+    .newsletter-btn button {
+        right: 20px;
+    }
+    button.owl-prev{
+        left: -42px;
+    }
+    
+}
+
+
+
+/* For IPad Pro */
+@media(max-width:1279px){
+    
+.header-container {
+    justify-content: space-between;
+}
+
+nav.navbar {
+    width: 82%;
+    justify-content: flex-end;
+}
+nav.navbar>ul>li {
+    padding: 20px 10px;
+}
+.header-icons {
+    width: 15%;
+}
+.about-us-heading h2{
+    font-size: 62px;
+}
+.flavours-width1{
+    margin-top: 10px;
+}
+.flavours-flex{
+    margin-top: 0px;
+}
+.index-shop-element{
+    height: 400px;
+    background-size: auto;
+}
+.index-shop-tea{
+    height: 400px;
+    background-size: auto;
+}
+.banner {
+    height: 50vh;
+}
+.banner-content h1 {
+    max-width: 80%;
+}
+
+button.owl-prev{
+    left: -42px;
+}
+.newsletter-main {
+    max-width: 60%;
+}
+.newsletter-btn button {
+    right: 20px;
+}   
+/* For Footer */
+.footer-section1 {
+    flex-wrap: wrap;
+    justify-content: unset;
+}
+
+.footer-logo {
+    width: 100%;
+}
+
+.footer-links {
+    width: 30%;
+    margin-top: 30px;
+}
+
+.footer-social-icons {
+    width: 100%;
+}
+
+.footer-links h3 {
+    margin-bottom: 20px;
+}
+
+/*...................
+ For Second Home Page
+ ....................*/
+ nav.navbar1>ul>li {
+    padding: 20px 10px;
+}
+
+.banner1-main {
+    height: 50vh;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.banner-content1 {
+    max-width: 80%;
+}
+
+.about-us1-content2 {
+    padding: 70px 50px;
+}
+
+.our-coffee-content p {
+    max-width: 60%;
+}
+
+button.home-video-btn {
+    top: 48%;
+    left: 44%;
+}
+
+.home-video-main video {
+    height: 460px;
+}
+
+.sub-main {
+    background-position: center;
+}
+
+.sub-content p {
+    max-width: 55%;
+}
+
+}
+
+/*........
+ For Ipad 
+ ........*/
+
+ @media (max-width:1023px){
+    p{
+        font-size: 14px;
+    }
+     /* For Hamburger */
+     nav.navbar{
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        background: black;
+        width: 60%;
+        height: 100%;
+        z-index: 2;
+        left: -60%;
+        transition: all 0.4s;
+        display: block;
+
+    }
+    nav.navbar>ul{
+        margin: 0px 20px;
+        margin-top: 80px;
+        padding: 0px;
+    }
+    nav.navbar>ul>li{
+        display: block;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    nav.navbar>ul>li>a{
+        font-size: 22px;
+    }
+    nav.navbar.active{
+        left: -3px;
+    }
+    
+    .hamburger {
+        display: block;
+        position: relative;
+        width: 80%;
+        z-index: 3;
+    }
+    
+    .hamburger button {
+        background: transparent;
+        border: 0px;
+        outline: none;
+    }
+    
+    .hamburger button span {
+        width: 40px;
+        height: 2px;
+        display: block;
+        background: #fff;
+        margin-bottom: 8px;
+        transition: 0.4s ease-in-out;
+    }
+    .hamburger button.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .hamburger button.active span:nth-child(2) {
+        display: none;
+    }
+    
+    .hamburger button.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger button.active {
+        position: relative;
+        z-index: 99;
+    }
+    /* For Header */
+    .logo {
+        left: 40%;
+    }
+    .header-icons{
+        width: 20%;
+    }
+    .header-icons>ul>li{
+        padding: 0px 8px;
+    }
+    .banner-content {
+        max-width: 60%;
+    }
+    
+    .banner-content h1 {
+        max-width: 90%;
+    }
+    .banner {
+        height: 70vh;
+    }
+    
+    .index-shop-flex {
+        flex-wrap: wrap;
+    }
+    
+    .index-shop-element {
+        width: 100%;
+    }
+    
+    .index-shop-tea {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .flavours-width1 {
+        width: 50%;
+        padding: 10px 10px;
+        margin: 0;
+    }
+    .owl-heading {
+        margin-bottom: 50px;
+    }
+    .newsletter-main {
+        max-width: 90%;
+    }
+    .newsletter-btn button {
+        right: 20px;
+    }
+    .container-main{
+        max-width: 90%;
+    }
+    .about-us-heading h2{
+        margin-left: 0px;
+    }
+    .about-us-main{
+        padding: 60px 0px 20px 0px;
+    }
+    .flavours-flex{
+        margin-top: 30px;
+    }
+    .about-us-heading h2::before{
+        display: none;
+    }
+    .about-us-content {
+        padding-left: 10px;
+        width: 100%;
+    }
+    .about-us-heading{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* For Footer */
+    .footer-section1 {
+        flex-wrap: wrap;
+    }
+    
+    .footer-logo {
+        width: 100%;
+    }
+    
+    .footer-links {
+        width: 50%;
+        margin-top: 30px;
+    }
+    
+    .footer-social-icons {
+        width: 100%;
+    }
+    
+    .footer-links h3 {
+        margin-bottom: 20px;
+    }
+
+     /*...............
+     For Home Page 2 
+     ...............*/
+
+    /* For Hamburger */
+    nav.navbar1{
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        background: white;
+        width: 70%;
+        height: 100%;
+        z-index: 2;
+        left: -70%;
+        transition: all 0.4s;
+        display: block;
+
+    }
+    nav.navbar1>ul{
+        margin: 0px 0px;
+        margin-top: 120px;
+        padding: 0px;
+    }
+    nav.navbar1>ul>li{
+        display: block;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    nav.navbar1>ul>li>a{
+        font-size: 22px;
+    }
+    nav.navbar1.active{
+        left: -3px;
+    }
+    
+    .hamburger1 {
+        display: block;
+        position: relative;
+        width: 34%;
+        z-index: 3;
+    }
+    
+    .hamburger1 button {
+        background: transparent;
+        border: 0px;
+        outline: none;
+    }
+    
+    .hamburger1 button span {
+        width: 40px;
+        height: 3px;
+        display: block;
+        background: black;
+        margin-bottom: 7px;
+        transition: 0.4s ease-in-out;
+    }
+    .hamburger1 button.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .hamburger1 button.active span:nth-child(2) {
+        display: none;
+    }
+    
+    .hamburger1 button.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger1 button.active {
+        position: relative;
+        z-index: 99;
+    }
+    .banner1-main {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .banner1-main::after {
+        content: '';
+        background: rgb(255,255,255,0.86);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .banner-content-main {
+        z-index: 1;
+    }
+    
+    .banner-content-main {
+        max-width: 90%;
+    }
+    
+    .banner-content1 {
+        max-width: 60%;
+    }
+    
+    .banner-content1 h1 {
+        font-size: 36px;
+    }
+    .about-us1-main {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .about-us1-content1 {
+        width: 100%;
+    }
+    
+    .about-us1-content2 {
+        width: 100%;
+    }
+    
+    section.about-us1 {
+        margin-top: 0;
+    }
+    
+    .about-us1-content1 {
+        height: 500px;
+    }
+    .our-coffee-main {
+        padding: 50px 0px;
+        max-width: 90%;
+    }
+    
+    .our-coffee-content p {
+        max-width: 70%;
+    }
+    
+    .our-coffee-images-width1 {
+        width: 50%;
+    }
+    
+    .our-coffee-images {
+        justify-content: center;
+    }
+    .why-colibri-main {
+        margin: 0 auto;
+        padding: 30px 0px;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .why-colibri-width1 {
+        width: 100%;
+        margin-left: -50px;
+        margin-top: 30px;
+    }
+    
+    .why-colibri-width2 {
+        width: 100%;
+    }
+    
+    .why-colibri-width1 img {
+        margin-left: 0;
+    }
+    
+    .why-colibri-width2 a {
+        background: transparent;
+        color: black;
+        border: 1px solid #624933;
+    }
+    .home-video-main video {
+        height: 300px;
+    }
+    
+    button.home-video-btn {
+        left: 40%;
+        top: 40%;
+    }
+    .sub-main {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .sub-main::after {
+        content: '';
+        background: rgb(0,0,0,0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .sub-content {
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .sub-content h2 {
+        font-weight: 500;
+    }
+    
+    .sub-content p {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    
+    .sub-content button {
+        margin-top: 20px;
+    } 
+    .about-us1-content2{
+        margin: 0;
+    }
+    
+}
+ 
+
+
+/*..........
+ For Phone 
+ ...........*/
+ @media (max-width:767px){
+    
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .banner-content p{
+        max-width: 100%;
+    }
+    /* For Hamburger */
+    nav.navbar{
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        background: black;
+        width: 70%;
+        height: 100%;
+        z-index: 2;
+        left: -70%;
+        transition: all 0.4s;
+        display: block;
+
+    }
+    nav.navbar>ul{
+        margin: 0px 20px;
+        margin-top: 80px;
+        padding: 0px;
+    }
+    nav.navbar>ul>li{
+        display: block;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    nav.navbar>ul>li>a{
+        font-size: 22px;
+    }
+    nav.navbar.active{
+        left: -3px;
+    }
+    
+    .hamburger {
+        display: block;
+        position: relative;
+        width: 75%;
+        z-index: 3;
+    }
+    
+    .hamburger button {
+        background: transparent;
+        border: 0px;
+        outline: none;
+    }
+    
+    .hamburger button span {
+        width: 40px;
+        height: 2px;
+        display: block;
+        background: #fff;
+        margin-bottom: 8px;
+        transition: 0.4s ease-in-out;
+    }
+    .hamburger button.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .hamburger button.active span:nth-child(2) {
+        display: none;
+    }
+    
+    .hamburger button.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger button.active {
+        position: relative;
+        z-index: 99;
+    }
+    
+    /* For Header */
+    .logo{
+        left: 141px;
+        padding: 20px 8px;
+        background: transparent;
+    } 
+    .logo>img{
+        max-width: 50%;
+    }
+    .header-container{
+        padding: 30px 0px;
+    }
+    .header-icons>ul>li:nth-child(3){
+        display: none;
+    }
+    .header-icons{
+        width: 27%;
+    }
+    .header-icons>ul>li{
+        padding: 0px 8px;
+    }
+    /* For Banner */
+    .banner-content-main {
+        max-width: 81%;
+    }
+    
+    .banner-content {
+        max-width: 100%;
+    }
+    
+    .banner-content h1 {
+        font-size: 36px;
+        font-weight: 500;
+        max-width: 70%;
+    }
+    .banner{
+        height: 70vh;
+    }
+    /* For About Us */
+    .about-us-heading {
+        width: 100%;
+    }
+    
+    .about-us-content {
+        width: 100%;
+    }
+    .flavours-flex{
+        margin-top: 10px;
+    }
+    
+    .about-us-heading h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    
+    .container-main {
+        max-width: 90%;
+    }
+    .about-us-heading h2::before{
+        display: none;
+    }
+    .about-us-main {
+        padding: 40px 0px 0px 0px;
+    }
+    .flavours-width1 {
+        width: 50%;
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
+    .flavours-width1 {
+        width: 50%;
+        padding: 10px 10px;
+    }
+    
+    .index-shop-element {
+        width: 100%;
+        height: 400px;
+    }
+    .index-shop-flex{
+        margin: 0;
+        padding: 10px 0px 20px 0px;
+    }
+    .index-shop-hover{
+        background-size: auto;
+    }
+    .newsletter-main p {
+        max-width: 100%;
+    }
+    .index-shop-flex {
+        flex-wrap: wrap;
+    }
+    
+    .index-shop-tea {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .owl-heading {
+        margin-bottom: 40px;
+    }
+    .index-blog-carousel {
+        padding: 0;
+    }
+    .owl-heading h2 {
+        font-size: 28px;
+    }
+    .newsletter-main {
+        max-width: 70%;
+    }
+    
+    .newsletter-btn a {
+        right: 10px;
+    }
+
+    /* For Footer */
+    .footer-section1 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .footer-logo {
+        width: 100%;
+    }
+    
+    .footer-links {
+        width: 40%;
+        margin-top: 30px;
+    }
+    
+    .footer-social-icons {
+        width: 100%;
+    }
+    
+    .footer-links h3 {
+        margin-bottom: 30px;
+    }
+    .footer-copyright {
+        width: 100%;
+    }
+    
+    .footer-payment {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .footer-section2 {
+        flex-wrap: wrap;
+    }
+
+
+    /*...............
+     For Home Page 2 
+     ...............*/
+
+    /* For Hamburger */
+    nav.navbar1{
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        background: white;
+        width: 70%;
+        height: 100%;
+        z-index: 2;
+        left: -70%;
+        transition: all 0.4s;
+        display: block;
+
+    }
+    nav.navbar1>ul{
+        margin: 0px 0px;
+        margin-top: 120px;
+        padding: 0px;
+    }
+    nav.navbar1>ul>li{
+        display: block;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    nav.navbar1>ul>li>a{
+        font-size: 22px;
+    }
+    nav.navbar1.active{
+        left: -3px;
+    }
+    
+    .hamburger1 {
+        display: block;
+        position: relative;
+        width: 34%;
+        z-index: 3;
+    }
+    
+    .hamburger1 button {
+        background: transparent;
+        border: 0px;
+        outline: none;
+    }
+    
+    .hamburger1 button span {
+        width: 30px;
+        height: 3px;
+        display: block;
+        background: black;
+        margin-bottom: 7px;
+        transition: 0.4s ease-in-out;
+    }
+    .hamburger1 button.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .hamburger1 button.active span:nth-child(2) {
+        display: none;
+    }
+    
+    .hamburger1 button.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger1 button.active {
+        position: relative;
+        z-index: 99;
+    }
+    /* For Header */
+    .header-icons1>ul>li:nth-last-child(1){
+        display: none;
+    }
+    /* For Banner */
+    .banner1-main {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+    }
+    
+    .banner-content-main {
+        z-index: 1;
+    }
+    
+    .banner-content1 {
+        max-width: 100%;
+    }
+    
+    .banner-content1 h1 {
+        font-size: 36px;
+        max-width: 90%;
+    }
+    
+    .banner1-main::after {
+        content: '';
+        background: rgb(255,255,255,0.86);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .banner1-main {
+        position: relative;
+    }
+    .about-us1-content2{
+        margin: 0;
+    }
+    section.about-us1 {
+        margin-top: 0;
+    }
+    
+    .about-us1-main {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .about-us1-content1 {
+        width: 100%;
+        height: 414px;
+    }
+    
+    .about-us1-content2 {
+        width: 100%;
+        padding: 70px 20px;
+    }
+    .our-coffee-main {
+        padding: 50px 0px;
+        max-width: 90%;
+    }
+    
+    .our-coffee-content p {
+        max-width: 100%;
+    }
+    
+    .our-coffee-images-width1 {
+        width: 50%;
+    }
+    
+    .our-coffee-images {
+        justify-content: center;
+    }
+    .why-colibri-main {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .why-colibri-width1 {
+        width: 100%;
+        margin-left: -24px;
+    }
+    
+    .why-colibri-width2 {
+        width: 100%;
+        margin: 20px 0px; 
+    }
+    
+    .why-colibri-width1 img {
+        margin-left: 0;
+    }
+    
+    .why-colibri-width2 a {
+        background: transparent;
+        color: black;
+        border: 1px solid #624933;
+    }
+    .home-video-main video {
+        height: 263px;
+    }
+    
+    button.home-video-btn {
+        top: 50%;
+        left: 34%;
+        padding: 15px 15px;
+    }
+    .sub-main {
+        background-size: cover;
+        background-position: right;
+        position: relative;
+    }
+    
+    .sub-main::after {
+        content: '';
+        background: rgb(0,0,0,0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .sub-content {
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .sub-content h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    .sub-content p {
+        max-width: 100%;
+    }
+    .logo1 img{
+        width: 38px;
+        height: 38px;
+    }
+    .header-container1 {
+        padding: 20px 0px;
+    }
+ }
+ /* For Small Phones */
+ @media (max-width: 340px){
+        
+        p{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .banner-content p{
+            max-width: 100%;
+        }
+        /* For Hamburger */
+        nav.navbar{
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            background: black;
+            width: 70%;
+            height: 100%;
+            z-index: 2;
+            left: -70%;
+            transition: all 0.4s;
+            display: block;
+    
+        }
+        nav.navbar>ul{
+            margin: 0px 20px;
+            margin-top: 80px;
+            padding: 0px;
+        }
+        nav.navbar>ul>li{
+            display: block;
+            margin-bottom: 20px;
+            padding: 0px;
+        }
+        nav.navbar>ul>li>a{
+            font-size: 14px;
+        }
+        nav.navbar.active{
+            left: -3px;
+        }
+        
+        .hamburger {
+            display: block;
+            position: relative;
+            width: 75%;
+            z-index: 3;
+        }
+        
+        .hamburger button {
+            background: transparent;
+            border: 0px;
+            outline: none;
+        }
+        
+        .hamburger button span {
+            width: 30px;
+            height: 2px;
+            display: block;
+            background: #fff;
+            margin-bottom: 6px;
+            transition: 0.4s ease-in-out;
+        }
+        .hamburger button.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5.4px, 6px);;
+        }
+        
+        .hamburger button.active span:nth-child(2) {
+            display: none;
+        }
+        
+        .hamburger button.active span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+        
+        .hamburger button.active {
+            position: relative;
+            z-index: 99;
+        }
+        .logo {
+            left: 117px;
+        }
+        
+        .header-icons {width: 35%;}
+        .banner-content-main {
+            max-width: 90%;
+        }
+        
+        .banner-content>a:nth-child(3) {
+            padding: 10px 20px;
+        }
+        
+        .banner-content a:nth-child(4) {
+            padding: 10px 20px;
+        }
+        
+        .index-shop-element {
+            height: 300px;
+        }
+        
+        .index-shop-tea {
+            height: 300px;
+        }
+        
+        .index-shop-content {
+            padding: 20px 10px;
+        }
+        
+        section.index-owl-background {
+            padding: 40px 0px;
+        }
+        
+        .owl-heading {
+            margin-bottom: 30px;
+        }
+        
+        .owl-heading h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .newsletter-btn button {
+            right: 10px;
+        }
+
+        .banner-content1 h1 {
+            font-size: 32px;
+        }
+        
+        .banner-content1>a:nth-child(3) {
+            padding: 10px 20px;
+        }
+        
+        .banner-content1 a:nth-child(4) {
+            padding: 10px 20px;
+        }
+        
+        .home-video-main video {
+            height: 160px;
+        }
+        
+        button.home-video-btn {
+            top: 35%;
+            left: 29%;
+            padding: 10px 10px;
+        }
+        .hamburger1 button span {
+            height: 2px;
+            margin-bottom: 5px;
+        }
+        .hamburger1 button.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        nav.navbar1>ul>li>a {
+            font-size: 14px;
+        }
+        
+        nav.navbar1>ul>li {
+            margin-bottom: 20px;
+        }
+        
+        nav.navbar1>ul {margin-top: 80px;}
+        
+        nav.navbar1 {
+            padding: 0px 20px;
+        }
+ }
